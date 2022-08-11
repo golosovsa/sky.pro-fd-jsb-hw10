@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.html,
+.body {
+    height: 100%;
+}
+
+.body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background: linear-gradient(125deg, #FC466B 0%, #ffffff 45%, #ffffff 55%, #3F5EFB 100%);
+}
+
+.task {
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+    border-radius: 5px;
+    backdrop-filter: blur(14px);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.form {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    gap: 8px;
+}
+
+.form__field {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin: 2px;
+}
+
+.form__field_highlight {
+    margin: 0;
+    border: 2px solid salmon;
+    border-radius: 5px;
+}
+
+.form__label {
+    font-family: Sans;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.form__label_awesome {
+    width: 220px;
+    font-size: 32px;
+}
+
+.form__input {
+    width: 170px;
+    padding: 8px;
+    font-family: Sans;
+    font-size: 14px;
+    line-height: 18px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    transition: border 0.2s linear;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.form__input_textarea {
+    width: 100%;
+    height: 120px;
+    resize: none;
+}
+
+.form__input_radio {
+    width: 30px;
+    height: 30px;
+}
+
+.form__input_select {
+    width: 100%;
+    margin: 1px;
+}
+
+.form__input_highlight{
+    border: 2px solid red;
+}
+
+.form__input:focus {
+    outline: none;
+    border: 2px solid gray;
+
+}
+
+.form__input:hover {
+    outline: none;
+    border: 2px solid gray;
+}
+
+.form__submit {
+    width: 100%;
+    height: 24px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    transition: border 0.2s linear;    
+}
+
+.form__submit:hover {
+    border: 2px solid gray;
+}
+
+.form__submit:focus {
+    outline: none;
+}
+
+.form__message {
+    text-align: center;
+    position: absolute;
+    bottom: 16px;
+    color: red;
+    font-family: Sans;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.form__message_hidden {
+    display: none;
+}
+
+.fa-star {
+    font-size: 20px;
+}
